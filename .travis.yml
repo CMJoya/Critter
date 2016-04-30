@@ -14,3 +14,6 @@ deploy:
   on:
     repo: CMJoya/Critter
     branch: Travis
+  run:
+    - "rake db:migrate"
+    - "rake cleanup"
