@@ -1,0 +1,16 @@
+language: ruby
+rvm:
+- 2.3.0
+addons:
+  postgresql: '9.4'
+before_script:
+- psql -c 'create database travis_ci_test;' -U postgres
+- cp config/database.yml.travis config/database.yml
+deploy:
+  provider: heroku
+  api_key:
+    secure: V4dWpuqUBaIZFBMJKg9QZTRzLLVcGnLc73Wrol+9NLRLmQWaahmf15eM8wDNeRuAIPtyNYO3wndMacR5L15Ta+9YKTQQWq2Rz9yHbuXCL/P78OpnrZMj//aPw5+EZApXQD4TvXrpR4UY+N44quhYb7lHioBZVVwApiGMXYfnVN0Aex2E5rY1Lu54ZvbwkT/TMlfIiHFjqkD14BG6nz2Vq86bFAp/hFBmFHac8NpGClYfxnaBVpYrIW365KEcVuaRpXbTmiJjPHePqWXgx8OKoCKoWfP+xR2mT2yRUKvH0ZvjDDDqNDBknS6r0jPsvja6nOz5sKwEE6guO9rljSrN5oDITQPqU73R45Xm1u8WqLttIfeTbTAjBY+wAdzWB3VyU0VM/BWo5KR50SxzW6z8zI+6RDIodW8KgONgNDcrUapv/mD3/n+lGubYnuX+4Qi9HnnN7LgQhCTWTpdTya46pJkoou7uprWmAmYGd0G/rS9o8aRsEUXJ98e0wQvfdzCKSbcDP5TxNs9uJEyJUMFjI0yRDCdoX35LJ9bPFGUECg62P0Ef/fmZ3PWcweN+mXj4bQmiFCiD6FJlgieyJWLgB1Tfu0Q2t8KVh43Kza1YScAmISTdcLIG66jT3a7RTd6D8AgCNyiT7oXAJxkJYGoKG0yN8wHM/ZPx0qgQxve7Tm0=
+  app: critter-it
+  on:
+    repo: CMJoya/Critter
+    branch: Travis
