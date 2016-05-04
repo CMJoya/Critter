@@ -18,7 +18,7 @@ class PostsController < ApplicationController
     @post.user_id = current_user.id
 
       if @post.save
-        redirect_to " ", notice: "Post was successfully created!"
+        redirect_to home_path, notice: "Post was successfully created!"
       else
         render :new, notice: "Error: Post Not Saved!"
     end
