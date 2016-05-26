@@ -22,7 +22,7 @@
               <h6 style="color: #0084B4; font-size: 150%;"><%= User.find_by_username(params[:id]).posts.count %></h6>
             </div>
             <div class="col-sm-2" style="font-size: 100%; opacity: 0.7;">FOLLOWERS<br>
-              <h6 style="color: #0084B4; font-size: 150%;">16</h6>
+              <h6 style="color: #0084B4; font-size: 150%;"><%= User.find_by_username(params[:id]).followers.count %></h6>
             </div>
             <% if user_signed_in? %>
               <div class="col-sm-8" style="text-align: right; margin-top: 5px;">
@@ -36,8 +36,10 @@
   <% end %>
 <% end %>
     <div class="container">
-      <span class="notice"><%= notice %></span>
-      <span class="alert"><%= alert %></span>
+      <center>
+        <span class="notice"><%= notice %></span>
+        <span class="alert"><%= alert %></span>
+      </center>
 
       <%= yield %>
     </div>
