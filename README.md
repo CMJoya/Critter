@@ -1,4 +1,6 @@
-==Critter(Twitter Clone)
+
+Critter(Twitter Clone)
+---
 
 ![img](landingpage.png)
 ![img](explore.png)
