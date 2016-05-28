@@ -1,6 +1,16 @@
-==Critter(Twitter Clone)
+Critter(Twitter Clone)
+---
 
-![img](landingpage.png)
-![img](explore.png)
-![img](home.png)
-![img](profile.png)
+![img](app/assets/images/landingpage.png)
+
+---
+
+![img](app/assets/images/explore.png)
+
+---
+
+![img](app/assets/images/home.png)
+
+---
+
+![img](app/assets/images/profile.png)
