@@ -1,18 +1,18 @@
 Critter(Twitter Clone)
 ---
 
-Landing Page:
+Landing Page
 ![img](app/assets/images/landingpage.png)
 
 ---
 
-Explore Page:
+Explore Page
 ![img](app/assets/images/explore.png)
 
 ---
-Home Page:
+Home Page
 ![img](app/assets/images/home.png)
 
 ---
-Profile Page:
+Profile Page
 ![img](app/assets/images/profile.png)
