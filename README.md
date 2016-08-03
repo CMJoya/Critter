@@ -5,13 +5,16 @@ Understand Gems And Their Place In Rails development. Relationships Between Mode
 
 Features:
 
-* Understand gems and their place in Rails development
-* Understand Relationships between models
-* Understand Personalization
-* Understand Authentication
-* Faker
-* Devise
-* Bootstrap
+* Gems and their place in Rails development
+* Relationships between models
+* Personalization
+* Authentication
+* Validations
+* Controllers
+* Capybara and MiniTest
+* Faker(https://github.com/stympy/faker)
+* Devise(https://github.com/plataformatec/devise)
+* Bootstrap(http://getbootstrap.com/)
 
 
 Landing Page
